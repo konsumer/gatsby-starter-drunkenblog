@@ -19,8 +19,8 @@ If you have a custom domain, put it in `pages/CNAME`. You can deploy to Google P
 Go edit `config.toml`. Change it to all of your stuff. change `pages/author.png` to your own picture.
 
 ## google analytics
-Put your `gaCode` in `config.toml`. If you don't use GA, just delete `gatsby-browser.js`.
+Put your `gaCode` in `config.toml`. If you don't use disqus, unset it.
 
-## discuss
+## disqus
 
 set your `disqusShortname` in `config.toml`. If you don't use disqus, unset it.
