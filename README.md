@@ -9,7 +9,7 @@ Install this starter (assuming Gatsby is installed) by running from your CLI:
 ## Running in development
 `gatsby develop`
 
-## deploying to gh-pges
+## deploying to gh-pages
 
 If you have a custom domain, put it in `pages/CHANME`. You can deploy to Google Pages with `npm run deploy`.
 
