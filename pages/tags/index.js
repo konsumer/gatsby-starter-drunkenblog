@@ -16,7 +16,7 @@ const style = {
 
 const TaggedPage = ({page, hideSummary}) => (
   <li>
-    <Link to={prefixLink(page.data.path) + '/'}>
+    <Link to={prefixLink(page.data.path)}>
     {page.data.title}
     </Link>
     {hideSummary ? null : <Summary body={page.data.body} />}
