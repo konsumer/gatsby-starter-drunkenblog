@@ -20,9 +20,16 @@ If you have a [custom domain](https://help.github.com/articles/using-a-custom-do
 
 Go edit `config.toml`. Change it to all of your stuff. change `pages/author.png` to your own picture.
 
-## google analytics
+### google analytics
 Put your `gaCode` in `config.toml`. If you don't use GA, unset it.
 
-## disqus
+### disqus
 
 set your `disqusShortname` in `config.toml`. If you don't use disqus, unset it.
+
+## todo
+
+I still have a few things I'd like to do:
+
+* [ ] dynamic generation of all tag pages (instead of full list + hashes)
+* [ ] disqus seems a litle flakey. needs more testing.
