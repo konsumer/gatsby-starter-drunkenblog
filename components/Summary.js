@@ -5,7 +5,6 @@ import { fixLinks } from 'utils'
 class Summary extends React.Component {
   summary (body) {
     const split = body.split('<hr>')
-    console.log('body', body)
     return split.length !== 0 && split[0].length < 200 ? split[0] : prune(body.replace(/<[^>]*>/g, ''), 200)
   }
 
