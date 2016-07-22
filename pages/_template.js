@@ -48,14 +48,14 @@ class Template extends React.Component {
     if (location.pathname === prefixLink('/')) {
       header = (
         <header style={style.header}>
-          <h1 style={style.h1}><Link style={style.Link} to={prefixLink('/')} > <img src="/icon.png" style={style.img}/> {config.blogTitle} </Link></h1>
+          <h1 style={style.h1}><Link style={style.Link} to={prefixLink('/')} > <img src={prefixLink('/icon.png')} style={style.img}/> {config.blogTitle} </Link></h1>
           <h2 style={style.h2}>{config.subTitle}</h2>
         </header>
       )
     } else {
       header = (
         <header>
-          <h3 style={style.h3}><Link style={style.Link} to={prefixLink('/')} > <img src="/icon.png" style={style.img}/> {config.blogTitle} </Link></h3>
+          <h3 style={style.h3}><Link style={style.Link} to={prefixLink('/')} > <img src={prefixLink('/icon.png')} style={style.img}/> {config.blogTitle} </Link></h3>
         </header>
       )
     }
