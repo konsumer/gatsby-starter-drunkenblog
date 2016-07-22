@@ -1,0 +1,5 @@
+node_modules/
+*.log
+public
+.gatsby-context.js
+.DS_Store
