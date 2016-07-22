@@ -52,7 +52,11 @@ class MarkdownWrapper extends React.Component {
         <hr style={style.hr} />
         <ReadNext post={post} pages={route.pages} />
         <Bio />
-        {config.disqusShortname ? <Disqus shortname={config.disqusShortname} title={post.title} url={config.blogUrl + route.page.path} /> : null}
+        {config.disqusShortname ? <Disqus
+                                    shortname={config.disqusShortname}
+                                    title={post.title}
+                                    identifier={route.page.path}
+                                    url={`${config.blogUrl}${prefixLink(route.page.path)}`} /> : null}
       </div>
     </DocumentTitle>
     )
