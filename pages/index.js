@@ -35,7 +35,7 @@ class BlogIndex extends React.Component {
         const title = access(page, 'data.title') || page.path
         pageLinks.push(
           <li key={page.path} style={style.post}>
-            <Link style={style.Link} to={prefixLink(page.path)}>
+            <Link style={style.Link} to={prefixLink(page.path) + '/'}>
             {title}
             </Link>
             <div style={style.date}>

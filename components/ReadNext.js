@@ -58,7 +58,7 @@ class ReadNext extends React.Component {
       return (
       <div>
         <h6 style={style.h6}>READ THIS NEXT:</h6>
-        <h3 style={style.h3}><Link to={{  pathname: prefixLink(nextPost.path),  query: {    readNext: true  }}} > {nextPost.data.title} </Link></h3>
+        <h3 style={style.h3}><Link to={{  pathname: prefixLink(nextPost.path) + '/',  query: {    readNext: true  }}} > {nextPost.data.title} </Link></h3>
         <Summary body={nextPost.data.body} />
         <hr />
       </div>
