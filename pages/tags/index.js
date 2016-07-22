@@ -5,6 +5,7 @@ import DocumentTitle from 'react-document-title'
 import Summary from 'components/Summary'
 import { config } from 'config'
 import { tagMap, getTags, getAllTags } from 'utils'
+import { prefixLink } from 'gatsby-helpers'
 
 const style = {
   tagLink: {
@@ -15,7 +16,7 @@ const style = {
 
 const TaggedPage = ({page, hideSummary}) => (
   <li>
-    <Link to={page.data.path}>
+    <Link to={prefixLink(page.data.path)}>
     {page.data.title}
     </Link>
     {hideSummary ? null : <Summary body={page.data.body} />}
@@ -28,7 +29,7 @@ const ShowTag = ({tag, pages, hideSummary}) => {
     .filter(page => getTags(page).map(tagMap).indexOf(tag) !== -1)
   return (
   <div>
-    <h2><Link style={style.tagLink} to={{pathname: '/tags/', hash: '#' + tagMap(tag)}}> {tag} </Link></h2>
+    <h2><Link style={style.tagLink} to={{pathname: prefixLink('/tags/'), hash: '#' + tagMap(tag)}}> {tag} </Link></h2>
     <ul>
       {taggedPages.map((page, i) => (<TaggedPage hideSummary={hideSummary} key={i} page={page} />))}
     </ul>
