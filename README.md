@@ -1,6 +1,8 @@
 # gatsby-starter-drunkenblog
 Gatsby starter for creating a blog
 
+Here is a [demo](http://konsumer.js.org/gatsby-starter-drunkenblog/).
+
 I wrote a [blog post](http://blog.jetboystudio.com/articles/gatsby) about it.
 
 Install this starter (assuming Gatsby is installed) by running from your CLI:
