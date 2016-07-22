@@ -12,6 +12,7 @@ import { rhythm } from 'utils/typography'
 import { config } from 'config'
 
 import 'css/zenburn.css'
+import 'css/article.css'
 
 const style = {
   h1: {
@@ -47,11 +48,11 @@ class MarkdownWrapper extends React.Component {
                                {`Posted ${moment(post.date).calendar().toLowerCase()}`}
                              </div>}
         <Tags post={post} style={style.Tags} />
-        <div ref="markdown" dangerouslySetInnerHTML={{__html: post.body}} />
+        <div className="article" ref="markdown" dangerouslySetInnerHTML={{__html: post.body}} />
         <hr style={style.hr} />
         <ReadNext post={post} pages={route.pages} />
         <Bio />
-        <Disqus shortname={config.disqusShortname} title={post.title} url={config.blogUrl + route.page.path} />
+        {config.disqusShortname ? <Disqus shortname={config.disqusShortname} title={post.title} url={config.blogUrl + route.page.path} /> : null}
       </div>
     </DocumentTitle>
     )

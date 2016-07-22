@@ -2,7 +2,6 @@ import React from 'react'
 import { config } from 'config'
 import { rhythm } from 'utils/typography'
 import { prefixLink } from 'gatsby-helpers'
-import profilePic from './profile-pic.png'
 
 const style = {
   img: {
@@ -19,7 +18,7 @@ const style = {
 
 const Bio = props => (
   <p style={style.p}>
-    <img src={`${profilePic}`} alt={`author ${config.authorName}`} style={style.img} /><span dangerouslySetInnerHTML={{__html: config.authorBio}} />
+    <img src='/author.png' alt={`author ${config.authorName}`} style={style.img} /><span dangerouslySetInnerHTML={{__html: config.authorBio}} />
   </p>
 )
 

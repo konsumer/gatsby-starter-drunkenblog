@@ -11,13 +11,16 @@ Install this starter (assuming Gatsby is installed) by running from your CLI:
 
 ## deploying to gh-pages
 
-If you have a custom domain, put it in `pages/CHANME`. You can deploy to Google Pages with `npm run deploy`.
+If you have a custom domain, put it in `pages/CNAME`. You can deploy to Google Pages with `npm run deploy`.
 
 
 ## configuration
 
-Go edit `config.toml`. Change it to all of your stuff. change `components/profile-pic.png` to your own picture.
+Go edit `config.toml`. Change it to all of your stuff. change `pages/author.png` to your own picture.
 
-### disabling google analytics
+## google analytics
+Put your `gaCode` in `config.toml`. If you don't use GA, just delete `gatsby-browser.js`.
 
-Just delete `gatsby-browser.js`.
+## discuss
+
+set your `disqusShortname` in `config.toml`. If you don't use disqus, unset it.
