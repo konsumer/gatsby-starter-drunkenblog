@@ -3,6 +3,7 @@ import moment from 'moment'
 import DocumentTitle from 'react-document-title'
 import { fixLinks } from 'utils'
 import Disqus from 'components/Disqus'
+import Komments from 'components/Komments'
 import { prefixLink } from 'gatsby-helpers'
 
 import ReadNext from 'components/ReadNext'
@@ -57,6 +58,7 @@ class MarkdownWrapper extends React.Component {
                                     title={post.title}
                                     identifier={route.page.path}
                                     url={`${config.blogUrl}${prefixLink(route.page.path)}`} /> : null}
+        {config.kommentsCode ? <Komments code={config.kommentsCode} /> : null}
       </div>
     </DocumentTitle>
     )
