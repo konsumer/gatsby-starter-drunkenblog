@@ -20,12 +20,16 @@ If you have a [custom domain](https://help.github.com/articles/using-a-custom-do
 
 Go edit `config.toml`. Change it to all of your stuff. change `pages/author.png` to your own picture.
 
-### google analytics
+### [google analytics](https://analytics.google.com/)
 Put your `gaCode` in `config.toml`. If you don't use GA, unset it.
 
-### disqus
+### [disqus](https://disqus.com/)
 
-set your `disqusShortname` in `config.toml`. If you don't use disqus, unset it.
+set your `disqusShortname` in `config.toml`. If you don't use disqus, unset it. This seems a bit flakey right now, so if you want nice fast-loading comments, use komments (below.)
+
+### [komments](https://komments.net)
+
+set your `kommentsCode` in `config.toml`. If you don't use disqus, unset it.
 
 ## todo
 
