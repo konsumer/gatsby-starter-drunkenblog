@@ -4,15 +4,15 @@ import { prefixLink } from 'gatsby-helpers'
 import { prune, include as includes } from 'underscore.string'
 import find from 'lodash/find'
 import intersect from 'just-intersect'
-import { rhythm, fontSizeToMS } from 'utils/typography'
+import { rhythm, scale } from 'utils/typography'
 import { getTags } from 'utils'
 import Summary from 'components/Summary'
 
 const style = {
   h6: {
     margin: 0,
-    fontSize: fontSizeToMS(-0.5).fontSize,
-    lineHeight: fontSizeToMS(-0.5).lineHeight,
+    fontSize: scale(-0.5).fontSize,
+    lineHeight: scale(-0.5).lineHeight,
     letterSpacing: -0.25
   },
   h3: {

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 import { Container } from 'react-responsive-grid'
 import { prefixLink } from 'gatsby-helpers'
-import { rhythm, fontSizeToMS } from 'utils/typography'
+import { rhythm, scale } from 'utils/typography'
 import { config } from 'config'
 
 const style = {
@@ -11,8 +11,8 @@ const style = {
   },
   h1: {
     marginBottom: 0,
-    fontSize: fontSizeToMS(1.5).fontSize,
-    lineHeight: fontSizeToMS(1.5).lineHeight,
+    fontSize: scale(1.5).fontSize,
+    lineHeight: scale(1.5).lineHeight,
     marginTop: 0
   },
   h2: {
